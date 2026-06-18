@@ -34,7 +34,7 @@ const productCategories = [
           "Cond. : carton de 12 pulvérisateurs de 750ml",
           "Recharge : carton de 4x5L"
         ],
-        image: "Assets/icon_3.png",
+        image: "Assets/product_flash.png",
         label: null,
         hasEcolabel: false
       },
@@ -48,7 +48,7 @@ const productCategories = [
           "Cond. : carton de 6 pulvérisateurs de 750ml",
           "Recharge : carton de 4x5L"
         ],
-        image: "Assets/icon_5.png",
+        image: "Assets/product_safir.png",
         label: null,
         hasEcolabel: false
       }
@@ -58,7 +58,7 @@ const productCategories = [
     id: 2,
     name: "Sols",
     color: "#58a52a",
-    icon: "Assets/product_cat_1.png",
+    icon: "Assets/product_cat_2.png",
     products: [
       {
         id: 201,
@@ -70,7 +70,7 @@ const productCategories = [
           "Dosage : 0,8% (1 dose de 40ml pour 5L d'eau)",
           "Cond. : carton de 4x5L"
         ],
-        image: "Assets/icon_1.png",
+        image: "Assets/product_solarom.png",
         label: "Assets/product_label.png",
         hasEcolabel: true
       },
@@ -84,7 +84,7 @@ const productCategories = [
           "Dosage : 0,4% (1 dose de 20ml pour 5L d'eau)",
           "Cond. : carton de 250 doses de 20ml"
         ],
-        image: "Assets/icon_1.png",
+        image: "Assets/product_solarom_concentre.png",
         label: "Assets/product_label.png",
         hasEcolabel: true
       },
@@ -98,7 +98,7 @@ const productCategories = [
           "Dosage : 0,25% (1 dose de 20ml pour 8L d'eau)",
           "Cond. : carton de 4x5L"
         ],
-        image: "Assets/icon_1.png",
+        image: "Assets/product_graisi.png",
         label: "Assets/product_label.png",
         hasEcolabel: true
       },
@@ -111,7 +111,7 @@ const productCategories = [
           "Dosage : 0,12% (1 verre pour 80L d'eau)",
           "Cond. : carton de 4x5L"
         ],
-        image: "Assets/icon_1.png",
+        image: "Assets/product_laova.png",
         label: null,
         hasEcolabel: false
       }
@@ -121,7 +121,7 @@ const productCategories = [
     id: 3,
     name: "Sanitaires",
     color: "#e74c3c",
-    icon: "Assets/product_cat_1.png",
+    icon: "Assets/product_cat_3.png",
     products: [
       {
         id: 301,
@@ -133,7 +133,7 @@ const productCategories = [
           "Dosage : prêt à l'emploi",
           "Cond. : carton de 12x1L"
         ],
-        image: "Assets/icon_2.png",
+        image: "Assets/product_lagon.png",
         label: "Assets/product_label.png",
         hasEcolabel: true
       },
@@ -147,7 +147,7 @@ const productCategories = [
           "Dosage : prêt à l'emploi",
           "Cond. : cartons de 12 pulvérisateurs de 750ml"
         ],
-        image: "Assets/icon_2.png",
+        image: "Assets/product_roseo.png",
         label: "Assets/product_label.png",
         hasEcolabel: true
       },
@@ -161,7 +161,7 @@ const productCategories = [
           "Cond. liquide : carton de 4x5L",
           "Cond. gel : carton de 12x1L - carton de 4x5L"
         ],
-        image: "Assets/icon_2.png",
+        image: "Assets/product_diabolo.png",
         label: null,
         hasEcolabel: false
       },
@@ -175,7 +175,7 @@ const productCategories = [
           "Cond. liquide : carton de 4x5L",
           "Cond. gel : carton de 12x1L - carton de 4x5L"
         ],
-        image: "Assets/icon_2.png",
+        image: "Assets/product_yelo.png",
         label: null,
         hasEcolabel: false
       },
@@ -188,7 +188,7 @@ const productCategories = [
           "Dosage : prêt à l'emploi",
           "Cond. : cartons de 4x5L"
         ],
-        image: "Assets/icon_2.png",
+        image: "Assets/product_creme_lavante.png",
         label: null,
         hasEcolabel: false
       }
@@ -198,7 +198,7 @@ const productCategories = [
     id: 4,
     name: "Industrie & Transport",
     color: "#9b59b6",
-    icon: "Assets/product_cat_1.png",
+    icon: "Assets/product_cat_4.png",
     products: [
       {
         id: 401,
@@ -209,7 +209,7 @@ const productCategories = [
           "Dosage : de 0,25% à 5% selon l'utilisation",
           "Cond. : carton de 4x5L - fût de 220 kg"
         ],
-        image: "Assets/icon_4.png",
+        image: "Assets/product_axio.png",
         label: null,
         hasEcolabel: false
       },
@@ -222,7 +222,7 @@ const productCategories = [
           "Dosage : de 0,5% à 10% selon l'utilisation",
           "Cond. : carton de 4x5L - fût de 220 kg"
         ],
-        image: "Assets/icon_5.png",
+        image: "Assets/product_vegeco.png",
         label: null,
         hasEcolabel: false
       }
@@ -232,7 +232,7 @@ const productCategories = [
     id: 5,
     name: "Traitement des sols",
     color: "#a4c639",
-    icon: "Assets/product_cat_1.png",
+    icon: "Assets/product_cat_5.png",
     products: [
       {
         id: 501,
@@ -243,7 +243,7 @@ const productCategories = [
           "Dosage : de 10% à 25% selon l'utilisation",
           "Cond. : carton de 4x5L"
         ],
-        image: "Assets/icon_4.png",
+        image: "Assets/product_genux.png",
         label: null,
         hasEcolabel: false
       },
@@ -256,7 +256,7 @@ const productCategories = [
           "Dosage : prêt à l'emploi",
           "Cond. : carton de 4x5L"
         ],
-        image: "Assets/icon_4.png",
+        image: "Assets/product_eclat.png",
         label: null,
         hasEcolabel: false
       },
@@ -269,7 +269,7 @@ const productCategories = [
           "Dosage : prêt à l'emploi",
           "Cond. : carton de 4x5L"
         ],
-        image: "Assets/icon_4.png",
+        image: "Assets/product_meteor.png",
         label: null,
         hasEcolabel: false
       },
@@ -282,7 +282,7 @@ const productCategories = [
           "Dosage : 2%",
           "Cond. : carton de 4x5L"
         ],
-        image: "Assets/icon_1.png",
+        image: "Assets/product_banquise.png",
         label: null,
         hasEcolabel: false
       },
@@ -295,7 +295,7 @@ const productCategories = [
           "Dosage : 5%",
           "Cond. : carton de 4x5L"
         ],
-        image: "Assets/icon_1.png",
+        image: "Assets/product_cascade.png",
         label: null,
         hasEcolabel: false
       }
@@ -305,7 +305,7 @@ const productCategories = [
     id: 6,
     name: "Restauration",
     color: "#f39c12",
-    icon: "Assets/product_cat_1.png",
+    icon: "Assets/product_cat_6.png",
     products: [
       {
         id: 601,
@@ -317,7 +317,7 @@ const productCategories = [
           "Dosage : 20 à 40ml (1 à 2 doses) pour 40L d'eau",
           "Cond. : carton de 4x5L"
         ],
-        image: "Assets/icon_3.png",
+        image: "Assets/product_liquide_vaisselle.png",
         label: "Assets/product_label.png",
         hasEcolabel: true
       }
