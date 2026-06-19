@@ -20,7 +20,7 @@ const productCategories = [
           "Cond. : carton de 12 pulvérisateurs de 750ml",
           "Recharge : carton de 4x5L"
         ],
-        image: "Assets/product_claris.png",
+        image: "Assets/product_claris.jpg",
         label: "Assets/product_label.png",
         hasEcolabel: true
       },
@@ -34,7 +34,7 @@ const productCategories = [
           "Cond. : carton de 12 pulvérisateurs de 750ml",
           "Recharge : carton de 4x5L"
         ],
-        image: "Assets/product_flash.png",
+        image: "Assets/product_flash.jpg",
         label: null,
         hasEcolabel: false
       },
@@ -48,7 +48,7 @@ const productCategories = [
           "Cond. : carton de 6 pulvérisateurs de 750ml",
           "Recharge : carton de 4x5L"
         ],
-        image: "Assets/product_safir.png",
+        image: "Assets/product_safir.jpg",
         label: null,
         hasEcolabel: false
       }
@@ -70,7 +70,7 @@ const productCategories = [
           "Dosage : 0,8% (1 dose de 40ml pour 5L d'eau)",
           "Cond. : carton de 4x5L"
         ],
-        image: "Assets/product_solarom.png",
+        image: "Assets/product_solarom.jpg",
         label: "Assets/product_label.png",
         hasEcolabel: true
       },
@@ -84,7 +84,7 @@ const productCategories = [
           "Dosage : 0,4% (1 dose de 20ml pour 5L d'eau)",
           "Cond. : carton de 250 doses de 20ml"
         ],
-        image: "Assets/product_solarom_concentre.png",
+        image: "Assets/product_solarom_concentre.jpg",
         label: "Assets/product_label.png",
         hasEcolabel: true
       },
@@ -98,7 +98,7 @@ const productCategories = [
           "Dosage : 0,25% (1 dose de 20ml pour 8L d'eau)",
           "Cond. : carton de 4x5L"
         ],
-        image: "Assets/product_graisi.png",
+        image: "Assets/product_graisi.jpg",
         label: "Assets/product_label.png",
         hasEcolabel: true
       },
@@ -111,7 +111,7 @@ const productCategories = [
           "Dosage : 0,12% (1 verre pour 80L d'eau)",
           "Cond. : carton de 4x5L"
         ],
-        image: "Assets/product_laova.png",
+        image: "Assets/product_laova.jpg",
         label: null,
         hasEcolabel: false
       }
@@ -133,7 +133,7 @@ const productCategories = [
           "Dosage : prêt à l'emploi",
           "Cond. : carton de 12x1L"
         ],
-        image: "Assets/product_lagon.png",
+        image: "Assets/product_lagon.jpg",
         label: "Assets/product_label.png",
         hasEcolabel: true
       },
@@ -147,7 +147,7 @@ const productCategories = [
           "Dosage : prêt à l'emploi",
           "Cond. : cartons de 12 pulvérisateurs de 750ml"
         ],
-        image: "Assets/product_roseo.png",
+        image: "Assets/product_roseo.jpg",
         label: "Assets/product_label.png",
         hasEcolabel: true
       },
@@ -161,7 +161,7 @@ const productCategories = [
           "Cond. liquide : carton de 4x5L",
           "Cond. gel : carton de 12x1L - carton de 4x5L"
         ],
-        image: "Assets/product_diabolo.png",
+        image: "Assets/product_diabolo.jpg",
         label: null,
         hasEcolabel: false
       },
@@ -175,7 +175,7 @@ const productCategories = [
           "Cond. liquide : carton de 4x5L",
           "Cond. gel : carton de 12x1L - carton de 4x5L"
         ],
-        image: "Assets/product_yelo.png",
+        image: "Assets/product_yelo.jpg",
         label: null,
         hasEcolabel: false
       },
@@ -188,7 +188,7 @@ const productCategories = [
           "Dosage : prêt à l'emploi",
           "Cond. : cartons de 4x5L"
         ],
-        image: "Assets/product_creme_lavante.png",
+        image: "Assets/product_creme_lavante.jpg",
         label: null,
         hasEcolabel: false
       }
@@ -209,7 +209,7 @@ const productCategories = [
           "Dosage : de 0,25% à 5% selon l'utilisation",
           "Cond. : carton de 4x5L - fût de 220 kg"
         ],
-        image: "Assets/product_axio.png",
+        image: "Assets/product_axio.jpg",
         label: null,
         hasEcolabel: false
       },
@@ -222,7 +222,7 @@ const productCategories = [
           "Dosage : de 0,5% à 10% selon l'utilisation",
           "Cond. : carton de 4x5L - fût de 220 kg"
         ],
-        image: "Assets/product_vegeco.png",
+        image: "Assets/product_vegeco.jpg",
         label: null,
         hasEcolabel: false
       }
@@ -243,7 +243,7 @@ const productCategories = [
           "Dosage : de 10% à 25% selon l'utilisation",
           "Cond. : carton de 4x5L"
         ],
-        image: "Assets/product_genux.png",
+        image: "Assets/product_genux.jpg",
         label: null,
         hasEcolabel: false
       },
@@ -256,7 +256,7 @@ const productCategories = [
           "Dosage : prêt à l'emploi",
           "Cond. : carton de 4x5L"
         ],
-        image: "Assets/product_eclat.png",
+        image: "Assets/product_eclat.jpg",
         label: null,
         hasEcolabel: false
       },
@@ -269,7 +269,7 @@ const productCategories = [
           "Dosage : prêt à l'emploi",
           "Cond. : carton de 4x5L"
         ],
-        image: "Assets/product_meteor.png",
+        image: "Assets/product_meteor.jpg",
         label: null,
         hasEcolabel: false
       },
@@ -282,7 +282,7 @@ const productCategories = [
           "Dosage : 2%",
           "Cond. : carton de 4x5L"
         ],
-        image: "Assets/product_banquise.png",
+        image: "Assets/product_banquise.jpg",
         label: null,
         hasEcolabel: false
       },
@@ -295,7 +295,7 @@ const productCategories = [
           "Dosage : 5%",
           "Cond. : carton de 4x5L"
         ],
-        image: "Assets/product_cascade.png",
+        image: "Assets/product_cascade.jpg",
         label: null,
         hasEcolabel: false
       }
@@ -317,7 +317,7 @@ const productCategories = [
           "Dosage : 20 à 40ml (1 à 2 doses) pour 40L d'eau",
           "Cond. : carton de 4x5L"
         ],
-        image: "Assets/product_liquide_vaisselle.png",
+        image: "Assets/product_liquide_vaisselle.jpg",
         label: "Assets/product_label.png",
         hasEcolabel: true
       }

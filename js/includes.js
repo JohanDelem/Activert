@@ -25,6 +25,14 @@ function highlightActiveLink(containerSelector, activeClass) {
       isActive = true;
     }
 
+    if (
+      containerSelector === 'nav' &&
+      href === 'produits.html' &&
+      ['produits.html', 'matieres-premieres.html', 'nettoyage-efficace.html'].includes(currentPage)
+    ) {
+      isActive = true;
+    }
+
     link.classList.toggle(activeClass, isActive);
 
     const button = link.querySelector('button');
@@ -38,6 +46,10 @@ async function initIncludes() {
     loadInclude('#hero-placeholder', 'hero.html'),
     loadInclude('#footer-placeholder', 'footer.html')
   ];
+
+  if (document.querySelector('#product-section-tabs-placeholder')) {
+    includes.push(loadInclude('#product-section-tabs-placeholder', 'product-section-tabs.html'));
+  }
 
   if (document.querySelector('#sustainability-tabs-placeholder')) {
     includes.push(loadInclude('#sustainability-tabs-placeholder', 'sustainability-tabs.html'));
