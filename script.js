@@ -382,7 +382,7 @@ function renderCategories(categoriesToShow = null) {
         <div class="category-icon">
           <img src="${category.icon}" alt="${category.name}">
         </div>
-        <div class="category-title">
+        <div class="category-title" style="background: linear-gradient(to right, #ececec, ${category.color}40);">
           <h2 style="color: ${category.color};">${category.name}</h2>
         </div>
       </div>

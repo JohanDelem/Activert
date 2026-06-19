@@ -283,6 +283,14 @@ padding:30px 30px;
   font-size: 15px;
 }
 
+.liste2{
+  margin-bottom: 9px;
+  margin-left: 120px;
+  max-width:500px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 .bloc-liste {
     display: flex;
     align-items: center;
@@ -713,8 +721,8 @@ margin:15px 0;
 }
 
 .label-badge {
-    width: 60px;
-    height: auto;
+    width: 100px;
+    height: 85px;
 }
 
 .product-visual {

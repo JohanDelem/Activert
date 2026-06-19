@@ -12,8 +12,21 @@ function highlightActiveLink(containerSelector, activeClass) {
   const currentPage = location.pathname.split('/').pop();
 
   document.querySelectorAll(`${containerSelector} a`).forEach((link) => {
-    const isActive = link.getAttribute('href') === currentPage;
+    const href = link.getAttribute('href');
+
+    let isActive = href === currentPage;
+
+    // Uniquement pour le menu principal
+    if (
+      containerSelector === 'nav' &&
+      href === 'developpement.html' &&
+      ['developpement.html', 'cycle-de-vie.html'].includes(currentPage)
+    ) {
+      isActive = true;
+    }
+
     link.classList.toggle(activeClass, isActive);
+
     const button = link.querySelector('button');
     if (button) button.classList.toggle(activeClass, isActive);
   });
