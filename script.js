@@ -338,11 +338,17 @@ function renderTabs() {
     <a href="#all" class="tab-link" data-category="all">
       <button class="selected">La gamme complète</button>
     </a>
+
     ${productCategories.map(category => `
-      <a href="#${category.id}" class="tab-link" data-category="${category.id}">
-        <button>${category.name}</button>
-      </a>
+    <a href="#${category.id}" class="tab-link" data-category="${category.id}">
+      <button>${category.name}</button>
+    </a>
     `).join('')}
+
+    <a href="#ecolabel" class="tab-link" data-category="ecolabel">
+      <button>Ecolabel</button>
+    </a>
+
   `;
   
   tabsContainer.innerHTML = tabsHTML;
@@ -417,10 +423,25 @@ function renderCategories(categoriesToShow = null) {
 function filterAndRenderProducts(categoryId) {
   if (categoryId === 'all') {
     renderCategories();
-  } else {
-    const filteredCategories = productCategories.filter(cat => cat.id === parseInt(categoryId));
-    renderCategories(filteredCategories);
-  }
+    return;
+  }  
+  else if (categoryId === 'ecolabel') {
+    const ecolabelCategories = productCategories
+      .map(category => ({
+        ...category,
+        products: category.products.filter(product => product.hasEcolabel)
+      }))
+      .filter(category => category.products.length > 0);
+
+    renderCategories(ecolabelCategories);
+    return;
+  } 
+  
+  const filteredCategories = productCategories.filter(
+    cat => cat.id === parseInt(categoryId)
+  );
+
+  renderCategories(filteredCategories);
 }
 
 // ====================================
@@ -651,4 +672,9 @@ document.addEventListener('DOMContentLoaded', () => {
   renderTabs();
   renderCategories();
   initCardDetailToggles();
+
+  // Appliquer l'effet hover à tous les boutons des cartes
+  document.querySelectorAll('.card button').forEach(button => {
+    applyContentButtonEffects(button);
+  });
 });
