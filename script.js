@@ -361,8 +361,16 @@ function renderTabs() {
       filterAndRenderProducts(categoryId);
       
       // Mettre à jour le style des boutons
-      document.querySelectorAll('.tabs button').forEach(btn => btn.classList.remove('selected'));
+      document.querySelectorAll('#productTabs button').forEach(btn => {
+      btn.classList.remove('selected');
+      });
       e.currentTarget.querySelector('button').classList.add('selected');
+      
+      // Mettre à jour l'URL sans recharger la page
+      const newUrl = categoryId === 'all' 
+        ? 'produits.html' 
+        : `produits.html?category=${categoryId}`;
+      window.history.pushState({ category: categoryId }, '', newUrl);
     });
   });
 }
@@ -665,6 +673,15 @@ document.addEventListener('includes:ready', () => {
 })();
 
 // ====================================
+// GESTION DES PARAMÈTRES URL
+// ====================================
+
+function getUrlCategory() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('category') || 'all';
+}
+
+// ====================================
 // INITIALISATION
 // ====================================
 
@@ -672,6 +689,23 @@ document.addEventListener('DOMContentLoaded', () => {
   renderTabs();
   renderCategories();
   initCardDetailToggles();
+
+  // Récupérer la catégorie depuis l'URL et afficher la bonne sélection
+  const categoryFromUrl = getUrlCategory();
+  
+  // Si une catégorie spécifique est demandée, la sélectionner et afficher
+  if (categoryFromUrl !== 'all') {
+    // Retirer selected du bouton "La gamme complète"
+    const allButton = document.querySelector('[data-category="all"] button');
+    if (allButton) allButton.classList.remove('selected');
+    
+    // Ajouter selected au bouton de la catégorie
+    const categoryButton = document.querySelector(`[data-category="${categoryFromUrl}"] button`);
+    if (categoryButton) categoryButton.classList.add('selected');
+    
+    // Filtrer et afficher les produits de cette catégorie
+    filterAndRenderProducts(categoryFromUrl);
+  }
 
   // Appliquer l'effet hover à tous les boutons des cartes
   document.querySelectorAll('.card button').forEach(button => {
